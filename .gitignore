@@ -26,13 +26,9 @@ yarn-error.log*
 
 venv*/
 json.json
-test.py
-test
 .idea
-*mport*.json
 data
 trash
-index.html
 
 
 # Byte-compiled / optimized / DLL files
