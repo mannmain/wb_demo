@@ -1,0 +1,154 @@
+.product-container {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.product-left {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product-right {
+  flex: 2 1 500px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-info {
+  flex: 2 1 60%;
+}
+
+.brand {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.color-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.color-thumb {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: border 0.3s;
+}
+
+.color-thumb:hover {
+  border: 2px solid #aaa;
+}
+
+.color-thumb.active {
+  border: 2px solid #000;
+}
+
+.sizes ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.sizes li {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.description {
+  margin-top: 20px;
+}
+
+.price-box {
+  flex: 1 1 200px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-box .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.buy-button {
+  padding: 10px 24px;
+  background-color: #8200f5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.buy-button:hover {
+  background-color: #5d00c1;
+}
+
+
+.size-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.size-box {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 80px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.size-box:hover {
+  border-color: #888;
+}
+
+.size-main {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.size-sub {
+  font-size: 12px;
+  opacity: 0.5;
+  line-height: 1.2;
+}
+
+.size-box.out-of-stock {
+  opacity: 0.4;
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}

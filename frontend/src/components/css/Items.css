@@ -1,0 +1,14 @@
+.main__container {
+    max-width: 1504px;
+    margin: 20px auto;
+    padding: 0 32px;
+}
+
+
+
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
